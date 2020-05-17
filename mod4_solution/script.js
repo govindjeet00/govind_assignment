@@ -40,7 +40,7 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // using the 'speak' method or either helloSpeaker's or byeSpeaker's
 // 'speak' method.
 // See Lecture 50, part 1
-for (var i=0;i<names.length();i++/* fill in parts of the 'for' loop to loop over names array */) {
+for (var i=0;i<names.length;i++/* fill in parts of the 'for' loop to loop over names array */) {
 
   // STEP 11:
   // Retrieve the first letter of the current name in the loop.
@@ -58,10 +58,11 @@ for (var i=0;i<names.length();i++/* fill in parts of the 'for' loop to loop over
   // name in the loop.
     if (names[i].charAt(0)=='j' || names[i].charAt(0)=='J'/* fill in condition here */) {
       // byeSpeaker.xxxx
-      names[i]=setCharAt(names[i],0,'J');
-      
+      names[i][0]='J';
+      speak(names[i]);
     } else {
       // helloSpeaker.xxxx
+      speak(names[i]);
     }
   }  
 }
