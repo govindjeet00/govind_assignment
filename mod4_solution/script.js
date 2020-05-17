@@ -62,7 +62,7 @@ for (var i=0;i<names.length;i++/* fill in parts of the 'for' loop to loop over n
       speak(names[i]);
     } else {
       // helloSpeaker.xxxx
-      speak(names[i]);
+      spea(names[i]);
     }
   }  
 }
